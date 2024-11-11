@@ -1,6 +1,13 @@
 # Wanna Go Out?
-A simple project for asking people out.
+A simple (and cringe) website for asking people out.
 
-I saw something like this on an Instagram reel. It was so simple yet so funny (in a good way). So I decided to make one myself. 
+![Preview of the website](preview.png)
+
+I saw something like this on an Instagram reel. It was super simple and funny. So I decided to make one myself.
+
+If "Yes" clicked:
+  it celebrates.
+Else:
+  See it for yourself.
 
 Try it out at: https://surajcdry.github.io/wannagoout/
