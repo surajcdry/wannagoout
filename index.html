@@ -17,7 +17,10 @@
       <img src="please.gif" alt="please"> 
       <div class="btn-group">
         <button class="yes-btn">Yes</button>
-        <button class="no-btn">No</button>
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=1a7aTb0UG1wIWoOE" target="_blank">
+          <button class="no-btn">No</button>
+        </a>
+        
       </div>
     </div>
     <script>
@@ -29,9 +32,6 @@
       const noBtnRect = noBtn.getBoundingClientRect();
       yesBtn.addEventListener("click", () => {
         window.location.href = "yes.html";
-      });
-      noBtn.addEventListener("click", () => {
-        window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=1a7aTb0UG1wIWoOE";
       });
       noBtn.addEventListener("mouseover", () => {
         const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 2;
