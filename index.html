@@ -30,14 +30,14 @@
       yesBtn.addEventListener("click", () => {
         window.location.href = "yes.html";
       });
+      noBtn.addEventListener("click", () => {
+        window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=1a7aTb0UG1wIWoOE";
+      });
       noBtn.addEventListener("mouseover", () => {
         const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 2;
         const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 2;
         noBtn.style.left = i + "px";
         noBtn.style.top = j + "px";
-      });
-      noBtn.addEventListener("click", () => {
-        window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=1a7aTb0UG1wIWoOE";
       });
     </script>
   </body>
