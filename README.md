@@ -1,5 +1,5 @@
 # Wanna Go Out?
-A simple (and cringe) website for asking people out.
+A plan and straight page to ask them out.
 
 ![Preview of the website](preview.png)
 
