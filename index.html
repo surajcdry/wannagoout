@@ -11,16 +11,17 @@
     />
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
     <div class="wrapper">
       <h2 class="question">Wanna go out with me ?</h2>
       <img src="please.gif" alt="please"> 
       <div class="btn-group">
         <button class="yes-btn">Yes</button>
-        <button class="no-btn">No</button>
-        
+        <button class="no-btn" onclick="gift()">No</button>
       </div>
     </div>
+
     <script>
       const wrapper = document.querySelector(".wrapper");
       const question = document.querySelector(".question");
@@ -28,15 +29,24 @@
       const noBtn = document.querySelector(".no-btn");
       const wrapperRect = wrapper.getBoundingClientRect();
       const noBtnRect = noBtn.getBoundingClientRect();
+
+      // happy page on "yes"
       yesBtn.addEventListener("click", () => {
         window.location.href = "yes.html";
       });
+      
+      // change position to random on hover
       noBtn.addEventListener("mouseover", () => {
         const i = Math.floor(Math.random() * (wrapperRect.width - noBtnRect.width)) + 2;
         const j = Math.floor(Math.random() * (wrapperRect.height - noBtnRect.height)) + 2;
         noBtn.style.left = i + "px";
         noBtn.style.top = j + "px";
       });
+      
+      // gift
+      function gift() {
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        }
     </script>
   </body>
 </html>
